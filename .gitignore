@@ -1,0 +1,8 @@
+$cat .gitignore
+#.gitignore
+# Node Files #
+/node_modules/
+# IDEs
+.idea/*
+.vscode
+*.swp
