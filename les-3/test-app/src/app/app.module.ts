@@ -12,6 +12,8 @@ import { FormsModule } from "@angular/forms";
 import { NoContentComponent } from './todo-list/no-content/no-content.component';
 import { TodoListItemComponent } from './todo-list/todo-list-item/todo-list-item.component';
 import { HeaderComponent } from './header/header.component';
+import { MainComponent } from './main/main.component';
+import { LinksComponent } from './header/links/links.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { HeaderComponent } from './header/header.component';
     TodoListComponent,
     NoContentComponent,
     TodoListItemComponent,
-    HeaderComponent
+    HeaderComponent,
+    MainComponent,
+    LinksComponent
   ],
   imports: [
     BrowserModule,
