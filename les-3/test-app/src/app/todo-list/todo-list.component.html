@@ -1,0 +1,40 @@
+<h1>ToDo List</h1>
+<hr>
+<div class="form-group">
+  <label for="task">Enter your task</label>
+  <input type="email" [(ngModel)]="currentTask" class="form-control" id="task">
+  <br>
+  <button class="btn btn-success" [disabled]="currentTask.length === 0" (click)="onAdd()">
+    ADD task
+  </button>
+</div>
+<h3>Tasks for Today</h3>
+<app-no-content *ngIf="tasks.length === 0; else templateRef"></app-no-content>
+<ng-template #templateRef>
+
+  <div class="row" *ngFor="let taskItem of tasks; let i = index">
+    <div class="col-10">
+     <app-todo-list-item [task]="i + 1 + '. ' + taskItem"></app-todo-list-item>
+    </div>
+    <div class="col-1">
+      <button (click)="onRemove(i)" class="btn btn-danger">X</button>
+    </div>
+    <div class="col-1">
+      <button (click)="onDone(i)" class="btn btn-success font-weight-bold">+</button>
+    </div>
+  </div>
+
+</ng-template>
+<hr>
+
+<div *ngIf="doneTasks.length > 0">
+  <h3>Done</h3>
+  <div class="row" *ngFor="let doneTask of doneTasks">
+    <div class="col-sm-12">
+      <div [ngClass]="{'alert': true, 'alert-info': doneTasks.length > 5}" role="alert">
+        {{doneTask}}
+      </div>
+    </div>
+  </div>
+</div>
+

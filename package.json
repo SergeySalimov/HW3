@@ -2,7 +2,7 @@
   "name": "hw3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "les-2/index.js",
   "scripts": {
     "build": "webpack --progress -p",
     "watch": "webpack --progress --watch",
@@ -20,11 +20,12 @@
   "homepage": "https://github.com/SergeySalimov/HW3#readme",
   "dependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.4.1",
     "rxjs": "^6.5.4",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
   }
 }
