@@ -11,6 +11,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { FormsModule } from "@angular/forms";
 import { NoContentComponent } from './todo-list/no-content/no-content.component';
 import { TodoListItemComponent } from './todo-list/todo-list-item/todo-list-item.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TodoListItemComponent } from './todo-list/todo-list-item/todo-list-item
     SuccessComponent,
     TodoListComponent,
     NoContentComponent,
-    TodoListItemComponent
+    TodoListItemComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
